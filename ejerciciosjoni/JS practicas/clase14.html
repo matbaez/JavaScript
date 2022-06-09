@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>EJemplo 14</title>
+</head>
+<body>
+
+
+<ul id='contenedor'>
+</ul>
+
+<script>
+var numeros = new Array(3,5,2,7,8,6,9)
+
+var loTiene = numeros.find(function(item){
+	return item === 7
+})
+
+var loTiene2 = numeros.findIndex(function(item){
+	return item === 7
+})
+
+//numeros.pop()
+
+numeros.push(23)
+numeros.push(29)
+
+
+var valorUnico = numeros.join(" valor: ");
+document.write(valorUnico);
+
+
+
+</script>
+</body>
+</html>

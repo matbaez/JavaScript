@@ -1,0 +1,57 @@
+body{
+    color: grey;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    margin: 0px;
+}
+h1{
+    font-weight: 700;
+}
+p{
+    line-height: 20px; /* line-height espacio entre lineas */
+    letter-spacing: 2px;
+    text-align: justify;
+}
+strong{
+    color: black;
+}
+a{
+    color: inherit;
+}
+footer p{
+    text-align: right;
+    padding: 30px;
+}
+ul{
+    display: inline-block;
+    float: right;
+}
+ul li{
+    display: inline-block;
+}
+nav ul li a{
+    background: #78909c;
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+}
+nav ul li a:hover{
+    color: black;
+}
+.logo{
+    width: 100px;
+}
+section{
+    width: 80%;
+    margin: 0 auto;
+    min-height: 70vh;
+}
+footer{
+    background: #263238;
+    height: 200px;
+}
+.card{
+    width: 48%;
+    margin: 1%;
+    float: left;
+}

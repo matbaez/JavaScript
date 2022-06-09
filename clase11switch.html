@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="contenedor">
+    </ul>
+
+    <script>
+
+
+        function cargarNumero(n){
+            var contenedor = document.getElementById('contenedor');
+            var li = document.createElement('li' );
+            var txt = document.createTextNode(n + ' desde la funcion');
+            li.appendChild(txt);
+            contenedor.appendChild(li);
+        }
+
+        var dia = 0;
+
+        switch(dia){
+            case 1 : 
+            document.write('Lunes') 
+            break
+            case 2 : 
+            document.write('Martes') 
+            break
+            case 3 : 
+            document.write('Miercoles') 
+            break
+            case 4 : 
+            document.write('Jueves') 
+            break
+            case 5 : 
+            document.write('Viernes') 
+            break
+            case 6 : 
+            document.write('Sabado') 
+            break
+            case 7 : 
+            document.write('Domingo') 
+            break
+            default: 
+            document.write('NO ES UN DIA DE LA SEMANA')
+        }
+
+    </script>
+</body>
+</html>

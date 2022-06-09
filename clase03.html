@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nombre = 'Pepe';
+        let apellido = 'Solito';
+
+        // .toLowerCase() sirve para poner toda la variable en minuscula
+        console.log(nombre.toLowerCase() +' '+apellido.toLowerCase());
+        console.log(nombre, apellido);
+
+        // .toUpperCase() sirve para poner toda la variable en mayuscula
+        console.log(apellido.toUpperCase());
+        console.log('la cantidad de letras que tiene mi apellido es: ' + apellido.length);
+
+        // .substr(0,1) para que muestre desde la letra que quiero a otra que quiero, aca mostraria solo la primera
+        console.log('Primer letra de mi apellido : '+ apellido.substr(0,1));
+        
+        console.log('Hola, '+ nombre + ' como te va ?');
+
+        //Interpolacion de texto
+        let resultado = `Hola querido ${nombre} como te va?`
+        console.log(resultado);
+    </script>
+</body>
+</html>

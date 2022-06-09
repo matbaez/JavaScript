@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>EJemplo 14</title>
+</head>
+<body>
+
+
+
+<script>
+
+	class Humano{
+		constructor(nombre, edad, email){
+			this.nombre = nombre
+			this.edad = edad
+			this.email = email
+		}
+		saludar(){
+			document.write('SALUDO'+this.nombre+"<br>")
+		}
+
+		static createHuman(nombre, edad, email, tipo){
+			if(tipo=='profe'){
+				return new Profe(nombre, edad, email)
+			}
+
+		}
+	}
+
+	class Alumno extends Humano{
+		comprar(){
+			document.write(this.nombre+' Compro un curso'+"<br>")
+		}
+	}
+
+	class Profe extends Humano{
+		calificar(){
+			document.write('El profe '+this.nombre+' calificó'+"<br>")
+		}
+		saludar(){
+			document.write('SALUDO'+this.nombre+" soy el profe."+"<br>")
+		}
+	}
+
+
+
+
+
+	let marcos = new Humano('Marcos Risotto', 32, 'marcos@risotto.com','profe')
+	// let jony = new Profe('J Ariste', 37, 'marcos@risotto.com')
+
+
+// jony.saludar()
+marcos.saludar()
+
+
+</script>
+</body>
+</html>

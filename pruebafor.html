@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciclo FOR</title>
+</head>
+<body>
+    <h2>Diga la cantidad de numero que quiere</h2>
+    <input type="number" id="dato">
+    <button id="btn">Apretame</button>
+    <ul id="contenedor">
+    </ul>
+
+    <script>    
+        var i = 0;
+        let dato = document.getElementById('dato');
+        let btn = document.getAnimations('btn');
+
+        btn.addEventListener('click', function(n){
+            let entrada = dato.value;
+            entrada.value = '';
+            var contenedor = document.getElementById('contenedor');
+            var lista = document.createElement('li');
+            var txt = document.createTextNode(n + ' para probar el ciclo for');
+            lista.appendChild(txt);
+            contenedor.appendChild(li);
+        })
+        
+        for(var i = 0; i < n; i++){
+            cargarDatos(i);
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>EJemplo 14</title>
+</head>
+<body>
+
+
+
+<script>
+
+	class Humano{
+		constructor(nombre, edad, email){
+			this.nombre = nombre
+			this.edad = edad
+			this.email = email
+		}
+		saludar(){
+			document.write('SALUDO'+this.nombre)
+		}
+	}
+
+	class Alumno extends Humano{
+		comprar(){
+			document.write('COmpro un curso')
+		}
+	}
+
+
+
+
+
+	let marcos = new Alumno('Marcos Risotto', 32, 'marcos@risotto.com')
+
+document.write(marcos.nombre)
+marcos.saludar()
+</script>
+</body>
+</html>

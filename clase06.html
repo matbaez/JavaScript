@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                    //Math.floor(Math.random() * (max - min) + min);
+
+        let scorePlayer1 = Math.floor(Math.random() * (1000 - 1) + 1);
+        let scorePlayer2 = Math.floor(Math.random() * (1000 - 1) + 1);
+        let scorePlayer3 = Math.floor(Math.random() * (1000 - 1) + 1);
+        let perfecScore = 478;
+
+        if(scorePlayer1 > scorePlayer2 && scorePlayer1 > scorePlayer3 || scorePlayer1 == perfecScore){
+            console.log('Jugador UNO ganaste, tu puntaje fue: ' + scorePlayer1)
+        } else if(scorePlayer2 > scorePlayer1 && scorePlayer2 > scorePlayer3 || scorePlayer2 == perfecScore){
+            console.log('Jugador DOS ganaste, tu puntaje es :' + scorePlayer2)
+        } else if(scorePlayer3 > scorePlayer1 && scorePlayer3 > scorePlayer2 || scorePlayer3 == perfecScore){
+            console.log('Jugador TRES ganaste, tu puntaje es: '+ scorePlayer3)
+        } else{
+            console.log('Todos los jugadores perdieron')
+        }
+
+
+        console.log('\t\tLos puntajes fueron : ')
+        console.log('El puntaje del jugador UNO es: '+scorePlayer1)
+        console.log('El puntaje del jugador DOS es: '+scorePlayer2)
+        console.log('El puntaje del jugador TRES es: '+scorePlayer3)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="contenedor">
+    </ul>
+
+    <script>
+        var numeros = new Array(3,5,2,7,8,6,9);
+
+        //find() busca si tiene o no un valor y lo imprime
+        //findIndex() Busca si tiene o no un valor e imprime la posicion
+        var loTiene = numeros.find(function(item){
+            return item === 0;
+        });
+        var loTiene2 = numeros.findIndex(function(item){
+            return item === 0;
+        });
+        // .pop() borra la ultima posicion del array
+        //numeros.pop();
+
+        //.push genera una nueva posicion
+        numeros.push(23);
+        numeros.push(29);
+
+        //.join() pone a todos los valores del array en una misma variable
+        var valorUnico = numeros.join(" | ");
+        document.write(valorUnico);
+
+    </script>
+</body>
+</html>

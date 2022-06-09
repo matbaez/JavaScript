@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>funciones que retornan valores (return)</title>
+</head>
+<body>
+	<script>
+		//Nombre de perritos
+    // perro1 = toby. perro2 = mart. perro3 = peshito
+    let toby = 7
+    let mart = 4
+    let peshito = 2
+
+    function calcularEdad(edad){
+        let calculo = edad*7
+        return calculo
+    }
+
+    //let edadTotal = 7 + 4 + 2 (son las edades de los perros)
+    let edadTotal = calcularEdad(toby) + calcularEdad(mart) + calcularEdad(peshito)
+    // se suman los return de cada una de las funciones
+    
+    console.log(edadTotal)
+	</script>
+</body>
+</html>		

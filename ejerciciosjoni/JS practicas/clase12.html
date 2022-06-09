@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>EJemplo 10</title>
+</head>
+<body>
+
+
+<ul id='contenedor'>
+</ul>
+
+<script>
+
+
+function cargarNumero(n){
+	var contenedor = document.getElementById('contenedor')
+	var li = document.createElement('li')
+	var txt = document.createTextNode(n+" desde la funcion")
+	li.appendChild(txt)
+	contenedor.appendChild(li)
+}
+
+var dia = 'Lunes'
+
+switch (dia){
+	case 'Lunes': 
+	document.write(1)
+	break
+	case 'Martes': 
+	document.write(2)
+	break
+	case 'Miercoles': 
+	document.write(3)
+	break
+	case 'Jueves': 
+	document.write(4)
+	break
+	case 'Viernes': 
+	document.write(5)
+	break
+	case 'Sabado': 
+	document.write(6)
+	break
+	case 'DOmingo': 
+	document.write(7)
+	break
+	default: 
+	document.write('NO ES UN DIA DE LA SEMANA')
+}
+
+
+		
+</script>
+</body>
+</html>

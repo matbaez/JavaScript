@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>html magia</title>
+	<style>
+		.verde{
+			color: green;
+			
+		}
+	</style>
+</head>
+<body>
+	<div id="saludos">
+	</div>
+<button></button>
+<input type="text" id="entrada"> <br><br>
+<button id='btn'>Saludar</button>
+<p id="cantidades"></p>
+<p id="asitieron"></p>
+
+
+<script>
+	let cantidadDeSaludos = 0;
+	let cantidadDeAsistentes = 0;
+	let titulo = document.getElementById('saludo')
+	let entradaLoca = document.getElementById('entrada')
+	let btn = document.getElementById('btn')
+	let contenedor = document.getElementById('saludos')
+	let cantidades = document.getElementById('cantidades')
+	var asistieron = document.getElementById('asitieron')
+
+	btn.addEventListener('click',function(){
+		cantidadDeSaludos++
+		let tipo = entradaLoca.value
+		if(tipo != ''){
+			let saludito = 'Invitado: '+tipo
+			var sal = document.createElement('h1')
+			var txt = document.createTextNode(saludito)
+			sal.appendChild(txt)
+			contenedor.appendChild(sal)
+
+			if(cantidadDeSaludos>1){
+				cantidades.innerHTML = "Tenemos "+cantidadDeSaludos+' invitados.'
+			}else{
+				cantidades.innerHTML = "Saludamos a "+cantidadDeSaludos+' invitado.'
+			}
+		}
+
+	})
+
+	document.addEventListener('click',function(e){
+		if(e.target.localName == 'h1'){
+			e.target.innerHTML = e.target.innerHTML + ' Asistió'
+			e.target.classList.add('verde')
+			cantidadDeAsistentes++
+			asistieron.innerHTML = 'Asistieron: '+ cantidadDeAsistentes
+		}
+		
+	})
+
+	
+</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>EJemplo 10</title>
+</head>
+<body>
+
+
+<ul id='contenedor'>
+</ul>
+
+<script>
+var i=0
+
+function cargarNumero(n){
+	var contenedor = document.getElementById('contenedor')
+	var li = document.createElement('li')
+	var txt = document.createTextNode(n+" desde la funcion")
+	li.appendChild(txt)
+	contenedor.appendChild(li)
+}
+
+// for(var i=0; i<100;i++){
+// 	cargarNumero(i+1)
+// }
+
+// while (i<7){
+// 	i =Math.random()*8
+// 	cargarNumero(i)
+// }
+	
+// 	do{
+// 		cargarNumero(i+1)
+// 		i++
+// 	}while(i<5)
+
+
+
+		
+</script>
+</body>
+</html>

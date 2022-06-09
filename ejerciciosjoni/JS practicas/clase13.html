@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>EJemplo 10</title>
+</head>
+<body>
+
+
+<ul id='contenedor'>
+</ul>
+
+<script>
+
+var dia = 3
+var dias = new Array('Lunes','Martes','Miercoles','Jueves','Viernes','Sabado','Domingo')
+
+var diasLaborales = dias.filter(function(item){
+	return item != 'Sabado' && item != 'Domingo'
+})
+
+
+
+
+
+ for (var i = 0; i < dias.length; i++) {
+ 	document.write(dias[i]+"<br>")
+ }
+
+
+
+		
+</script>
+</body>
+</html>

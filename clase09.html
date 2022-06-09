@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>getElementById / innerHTML</title>
+</head>
+<body>
+    <h1 id="titulo">Titulo</h1>
+
+    <input type="text" id="entrada"><br><br>
+
+    <button id="btn">Apretame</button>
+
+    <script>
+        let titulo = document.getElementById('titulo')
+        let entradaLoca = document.getElementById('entrada')
+        let btn = document.getElementById('btn')
+
+        //console.log(titulo, entradaLoca, btn)
+        //titulo.innerHTML = 'Titulo cambiado desde JavaScript'
+        console.log(titulo.innerHTML)
+
+        // addEventListener() --> agrega eventos, es un escuchador de eventos.
+
+        btn.addEventListener('click', pincharon)
+        function pincharon(){
+            alert('OUCH')
+
+        }
+    </script>
+</body>
+</html>

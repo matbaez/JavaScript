@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>EJemplo 14</title>
+</head>
+<body>
+
+
+
+<script>
+var alumno = {
+	nombre:'Marcos Rosotto',
+	edad:'32',
+	email:'marcos@risotto.com',
+	saludar:function(){
+		document.write("Hola Soy Marcos")
+	},
+	cursos:['freelancer','wordpress','frontend']
+}
+
+alumno.edad = 33
+alumno.nombre = 'Marcos querido Risotto'
+
+document.write("La edad de mi alumno es:"+alumno.edad+"<br>");
+document.write("El nombre de mi alumno es:"+alumno["nombre"]+"<br>");
+document.write("Su primer curso es:"+alumno.cursos[0]+"<br>")
+alumno.saludar()
+</script>
+</body>
+</html>

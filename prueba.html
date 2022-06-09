@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ejercicio de prueba</title>
+</head>
+<body>
+    <div id="personas">
+    </div>
+
+    <input type="text" id="entrada"><br><br>
+    <button id="btn">Holis</button>
+    <p id="contador"></p>
+
+    <script>
+        let entradita = document.getElementById('entrada')
+        let btn = document.getElementById('btn')
+        let contenedor = document.getElementById('personas')
+        let cantSaludos = 0
+        let cantidades = document.getElementById('contador')
+
+        btn.addEventListener('click',function(){
+            cantSaludos++
+            let saludo = entradita.value
+            if(saludo != ''){
+                let saludito = 'Hola '+saludo+', bienvenido'
+                let sal = document.createElement('h1')
+                let txt = document.createTextNode(saludito)
+                sal.appendChild(txt)
+                contenedor.appendChild(sal)
+                if (cantSaludos>1) {
+                    cantidades.innerHTML = 'Saludamos a '+cantSaludos+' personas'
+                } else {
+                    cantidades.innerHTML = 'Saludamos a '+cantSaludos+' persona'
+                }
+            }else{
+                cantSaludos--
+            }
+            
+        })
+    </script>
+</body>
+</html>

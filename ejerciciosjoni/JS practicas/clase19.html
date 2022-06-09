@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>EJemplo 14</title>
+</head>
+<body>
+
+
+
+<script>
+
+	class Humano{
+		constructor(nombre, edad, email){
+			this._nombre = nombre
+			this._edad = edad
+			this._email = email
+		}
+
+		saludar(){
+			document.write('SALUDO '+this._nombre+"<br>")
+		}
+		get nombre (){
+			return this._nombre;
+		}
+		set nombre(nombre){
+			this._nombre = nombre;
+		}
+		static saludarEstatico(){
+			document.write('SALUDO desde clase directo')
+		}
+
+
+	}
+
+
+
+
+
+// 	let marcos = new Humano('Marcos Risotto', 32, 'marcos@risotto.com')
+
+// marcos.nombre = "Pedro Martin"
+Humano.saludarEstatico()
+
+</script>
+</body>
+</html>

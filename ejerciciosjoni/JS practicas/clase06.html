@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Js clase 6</title>
+</head>
+<body>
+	<script>
+		let scorePlayer1 = Math.floor(Math.random() * (1000 - 1)) + 1;
+		let scorePlayer2 = Math.floor(Math.random() * (1000 - 1)) + 1;
+		let scorePlayer3 = Math.floor(Math.random() * (1000 - 1)) + 1;
+		let perfectScore = 35
+
+
+		if(scorePlayer1 > scorePlayer2 && scorePlayer1 > scorePlayer3 || scorePlayer1 == perfectScore ) {
+			console.log('Player uno le ganaste a todes con tus '+scorePlayer1)
+		}else if(scorePlayer2 > scorePlayer1 && scorePlayer2 > scorePlayer3 || scorePlayer2 == perfectScore){
+			console.log('Player DOS le ganaste a todes con tus '+scorePlayer2)
+		}else if (scorePlayer3 > scorePlayer1 && scorePlayer3 > scorePlayer2 || scorePlayer3 == perfectScore){
+			console.log('Player TRES le ganaste a todes con tus '+scorePlayer3)
+		}else{
+			console.log('No hay ganadores, es un empate')
+		}
+
+		console.log('Player 1:'+scorePlayer1,'Player 2:'+scorePlayer2, 'Player 3:'+scorePlayer3)
+
+	</script>
+</body>
+</html>
