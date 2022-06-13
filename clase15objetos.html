@@ -11,7 +11,30 @@
 
 
     <script>
+
+        var alumno = {
+            nombre: 'Matias Baez',
+            edad: '24',
+            email: 'matiasbaezdiaz@gmail.com',
+            saludar: function(){
+                document.write("Hola soy Matias");
+            },
+            cursos:['Wordpress','Frondtend','Backend']
+        }
+
         
+
+        //Cambiar valor del objeto
+        alumno.edad = 25;
+        alumno.nombre = 'Matias Emanuel Baez Diaz';
+
+
+        //Dos formas de acceder al objeto
+        document.write("La edad de mi alumno es: ", alumno["edad"]+ "<br>");
+        document.write("El nombre de mi alumno es: ", alumno.nombre + "<br>");
+        document.write('Su primer curso es: ', alumno.cursos[0] + "<br>")
+        alumno.saludar();
+
     </script>
 </body>
 </html>

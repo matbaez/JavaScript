@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function Alumno (nombre, edad, email){
+            this.nombre = nombre;
+            this.edad = edad;
+            this.email = email;
+            this.saludar = function(){
+                document.write("Hola soy "+ nombre+ "<br>");
+            }
+        }
+        let matias = new Alumno('Matias baez ', 25, 'matiasbaezdiaz@gmail.com ');
+        let marcos = new Alumno('Marcos Risotto ', 32, 'marcos@risotto.com ');
+
+        marcos.saludar();
+        document.write(marcos.email+ "<br>")
+
+
+
+        // var alumno = {
+        //     nombre: 'Matias Baez',
+        //     edad: '24',
+        //     email: 'matiasbaezdiaz@gmail.com',
+        //     saludar: function(){
+        //         document.write("Hola soy Matias");
+        //     },
+        //     cursos:['Wordpress','Frondtend','Backend']
+        // }
+
+        
+
+        // //Cambiar valor del objeto
+        // alumno.edad = 25;
+        // alumno.nombre = 'Matias Emanuel Baez Diaz';
+
+
+        // //Dos formas de acceder al objeto
+        // document.write("La edad de mi alumno es: ", alumno["edad"]+ "<br>");
+        // document.write("El nombre de mi alumno es: ", alumno.nombre + "<br>");
+        // document.write('Su primer curso es: ', alumno.cursos[0] + "<br>")
+        // alumno.saludar();
+
+    </script>
+
+</body>
+</html>
